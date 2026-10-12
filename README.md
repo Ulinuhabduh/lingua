@@ -2,7 +2,18 @@
 
 Lingua adalah aplikasi belajar bahasa Inggris dengan materi harian dan latihan percakapan suara.
 
-## Menjalankan aplikasi
+## Deploy ke Vercel
+
+Vercel menjalankan endpoint AI sebagai Vercel Functions dari folder `api/`; file `server.mjs` hanya untuk menjalankan versi lokal.
+
+1. Import repository ini ke Vercel dan pastikan Root Directory mengarah ke folder proyek ini.
+2. Di **Project Settings → Environment Variables**, tambahkan `OPENAI_API_KEY`. Model dapat diatur dengan `OPENAI_LESSON_MODEL`, `OPENAI_FEEDBACK_MODEL`, dan `OPENAI_REALTIME_MODEL`.
+3. Deploy ulang setelah menyimpan environment variables.
+4. Buka `https://domainmu/api/status`. Pastikan respons JSON memuat `"configured":true`.
+
+Jangan commit file `.env` atau menaruh API key di frontend. Key Vercel disimpan sebagai Environment Variable server-side.
+
+## Menjalankan aplikasi lokal
 
 1. Gunakan Node.js 20 atau lebih baru.
 2. Salin `.env.example` menjadi `.env`, lalu isi `OPENAI_API_KEY` dengan API key milikmu.
