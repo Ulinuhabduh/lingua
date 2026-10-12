@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "Lingua — Belajar Bahasa Inggris",
+  "short_name": "Lingua",
+  "description": "Belajar bahasa Inggris dari vocabulary hingga speaking.",
+  "lang": "id-ID",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f8fc",
+  "theme_color": "#f7f8fc",
+  "categories": ["education", "learning"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

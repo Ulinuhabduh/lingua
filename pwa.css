@@ -1,0 +1,7 @@
+.install-button{height:32px;display:flex;align-items:center;gap:6px;padding:0 10px;border:1px solid #e8e5f5;border-radius:7px;background:#fff;color:#7468ce;font-size:9px;font-weight:700;cursor:pointer;transition:.18s}
+.install-button:hover{background:#f5f3ff;border-color:#d9d4f2}
+.install-button svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.install-button.installed{color:#9998a7;background:#f7f7fa;border-color:#eeedf3;cursor:default}
+.install-button.installed svg{display:none}
+@media(max-width:760px){.topbar-actions{gap:8px}.install-button{height:29px;padding:0 7px;font-size:8px}.install-button svg{width:13px}}
+@media(max-width:470px){.install-button{width:29px;padding:0;justify-content:center}.install-button span{display:none}}
